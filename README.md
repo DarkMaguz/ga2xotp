@@ -4,7 +4,10 @@ Read data from Google Authenticator QR codes
 Google Authenticator has a somewhat overly complex way of exporting otherwise simple data.<br>
 So I wrote some code to wrap my head around it and now I'm just left puzzled.
 
-### Requirement
+## Usage
+Don't use...
+
+### Requirements
 For Debian Trixie:
 ```bash
 apt install protobuf-compiler liburiparser-dev libzbar-dev libmagick++-dev libssl-dev libcrypto++-dev nlohmann-json3-dev
@@ -40,12 +43,12 @@ Output sample:
 ```
 
 ## Thanks
-Inspiration from [Chris van Marle](github.com/qistoph) who wrote [OtpMigration.proto](src/OtpMigration.proto) and is wise(unlike me) to write in Python when simplicity is called for.
+Inspiration from [Chris van Marle](https://github.com/qistoph) who wrote [OtpMigration.proto](src/OtpMigration.proto) and is wise(unlike me) to write in Python when simplicity is called for.
 
-## Libraries used:
+### Libraries used:
 * [protobuf](https://github.com/google/protobuf/)
 * [uriparser](https://uriparser.github.io)
-* [zbar](htthttps://github.com/mchehab/zbar)
+* [zbar](https://github.com/mchehab/zbar)
 * [libmagick++](https://www.imagemagick.org/)
 * [libssl](https://openssl-library.org)
 * [libcrypto++](https://www.cryptopp.com)
